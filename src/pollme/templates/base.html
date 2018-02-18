@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PollMe Starter</title>
+  </head>
+  <body>
+      <nav>
+        <a href="{% url 'polls_api:questions_list' %}">API</a> |
+        <a href="{% url 'admin:index' %}">Admin</a> |
+      </nav>
+
+      {% block content %}
+      {% endblock %}
+
+  </body>
+</html>
