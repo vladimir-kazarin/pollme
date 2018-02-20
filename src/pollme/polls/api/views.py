@@ -12,15 +12,21 @@ from .serializers import (
 class QuestionListAPIView(APIView):
 
     def get(self, request, format=None):
-        questions = Question.objects.all()
-        serializer = QuestionListSerializer(questions, many=True)
-        return Response(serializer.data)
+        """
+        This should list all questions and their choices
+        Feel free to use DRF generic class based views
+        Otherwise it subclasses APIView
+        """
+        pass
 
     def post(self, request, format=None):
+        """nothing required for lab 5"""
         pass
 
     def put(self, request, format=None):
+        """nothing required for lab 5"""
         pass
 
     def delete(self, request, format=None):
+        """nothing required for lab 5"""
         pass
